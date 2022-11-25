@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+*{
+    top:0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+label {
+    font-weight: bold;
+    color: #01A6CA;
+}
+
+/* LOGIN FORM STYLE */
+#input_username_login, #input_password_login {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border: 1px solid #01A6CA;
+}
+
+#registration_link:active, #registration_link:visited, #registration_link:link {
+    color: #01A6CA;
+}
+
+/* REGISTRATION FORM STYLE */
+#registration_table input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #01A6CA;
+}
+
+
+/* LOGIN DAN REGISTER STYLE */
+.logo {
+    padding-top: 2%;
+    margin: 3% auto;
+    display: block;
+    width: 20%;
+}
+
+.form_title {
+    text-align: center;
+    color: #01A6CA;
+}
+
+.login_content, .registration_content {
+    width: 50%;
+    margin: 0px auto;
+}
+#login_table, #registration_table {
+    margin: 30px auto;
+    width: 60%;
+}
+
+#login_button, #registration_button {
+    display: block;
+    margin: auto;
+    width: 20%;
+    padding: 15px 0;
+    background-color: #01A6CA;
+    color:white;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.alternative_registration, .alternative_login {
+    margin: auto; 
+    display: flex;
+    width: fit-content;
+}
+
+.alternative_registration_item, .alternative_login_item {
+    flex-grow: 1;
+    margin: 15px 3px;
+    font-weight: bolder;
+}
+
+#registration_link, #login_link {
+    text-decoration: none;
+    color: #01A6CA;
+}
+
+/*HOMEPAGE STYLES*/
+header {
+    box-shadow: 0px 4px 10px 0 gainsboro;
+    display: flex;
+}
+
+#header_logo {
+    width: 15%;
+}
+
+#more_navigation_list {
+    display: none;
+}
+
+#navigation_list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0 6%;
+}
+
+#navigation_list a {
+    border: 3px solid #01A6CA;
+    margin: auto 8px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #01A6CA;
+    font-weight: bolder;
+}
+
+.hero_container {
+    background-color: #FAFAFA;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 10px 15%;
+}
+    #hero_logo {
+    width:80%;
+    }
+
+    .hero_description {
+        padding: 8% 0px;
+    }
+        #hero_description_title {
+            color:#01A6CA;
+            font-size: 50px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #hero_description_about {
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+        
+        #hero_description_link {
+            background-color: #01A6CA;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+.history_container {
+    box-shadow: 0px 4px 4px 0px gainsboro;
+    width:80%;
+    margin: auto;
+    padding: 50px 30px;
+    margin-bottom: 18px;
+}
+
+    #history_title {
+        color: #01A6CA;
+    }
+    
+    #empty_history_text {
+        text-align: center;
+        margin-top: 20px;
+        color: rgb(154, 154, 154);
+        display: none;
+    }
+
+    .list_of_histories {
+        padding: 20px 0;
+    }
+
+    .history {
+        background-color: #F5F5F5;
+        padding: 15px 20px;
+        margin: 25px auto;
+    }
+
+    .header_history {
+        display: flex;
+        align-items: center;
+    }
+
+    .history_status {
+        color: #01A6CA;
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #ongoing_status {
+        background:url(../public/images/loading.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 5%;
+    }
+
+    .link_to_status {
+        margin-left: auto;
+        background-color: #01A6CA;
+        padding: 10px 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    #done_status {
+        background: url(../public/images/check.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 5%;
+    }
+    .delete_icon {
+        margin-left: auto;
+    }
+
+    .history_detail tr td {
+        padding-left: 5px;
+    }
+
+.offers_container {
+    width: 80%;
+    margin: auto;
+    box-shadow: 0px 4px 4px 0px gainsboro;
+    margin-bottom: 18px;
+    padding: 50px 5%;
+}
+    #offers_title {
+        text-align: center;
+        color: #01A6CA;
+    }
+    .offer_odd {
+        padding: 20px 10%;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        margin: 50px auto;
+    }
+    .offer_even {
+        padding: 20px 10%;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        margin: 50px auto;
+    }
+    .offer_logo {
+        width: 50%;
+        margin: auto;
+    }
+    .offer_description h3 {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .offer_description p {
+        font-size: 18px;
+    }
+    #order_button {
+        display: block;
+        width: 30%;
+        text-align: center;
+        margin: auto;
+        background-color: #01A6CA;
+        padding: 15px 0;
+        text-decoration: none;
+        color: white;
+        font-weight: bolder;
+    }
+footer {
+    box-shadow: 4px 0 10px 0 gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#footer_logo {
+    width: 30%;
+}
