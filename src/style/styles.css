@@ -86,44 +86,6 @@ label {
 }
 
 /*HOMEPAGE STYLES*/
-header {
-    box-shadow: 0px 4px 10px 0 gainsboro;
-    display: flex;
-}
-
-    #header_logo {
-        width: 15%;
-    }
-
-    #more_navigation_list {
-        display: none;
-    }
-
-    #navigation_list {
-        display: flex;
-        align-items: center;
-        margin-left: auto;
-        padding: 0 6%;
-    }
-
-        #navigation_list a {
-            border: 3px solid #01A6CA;
-            margin: auto 8px;
-            padding: 10px 15px;
-            text-decoration: none;
-            color: #01A6CA;
-            font-weight: bolder;
-        }
-
-        #username_button {
-            background: url(../public/images/user.png);
-            background-size: 20px;
-            background-repeat: no-repeat;
-            background-position: left center;
-            background-position-x: 2%;
-            padding-left: 30px !important;
-        }
-
 .hero_container {
     background-color: #FAFAFA;
     margin-top: 18px;
@@ -305,4 +267,47 @@ footer {
             grid-column-start: 1;
             grid-column-end: 3;
             text-align: center;
+        }
+
+
+/*DETAIL PAGE STYLE*/
+
+
+/*DETAIL PAGE, HOMEPAGE, ORDER PAGE 1, ORDER PAGE 2, ORDER PAGE 3, DAN HISTORY PAGE STYLE*/
+header {
+    box-shadow: 0px 4px 10px 0 gainsboro;
+    display: flex;
+}
+
+    #header_logo {
+        width: 15%;
+    }
+
+    #more_navigation_list {
+        display: none;
+    }
+
+    #navigation_list {
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+        padding: 0 6%;
+    }
+
+        #navigation_list a {
+            border: 3px solid #01A6CA;
+            margin: auto 8px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #01A6CA;
+            font-weight: bolder;
+        }
+
+        #username_button {
+            background: url(../public/images/user.png);
+            background-size: 20px;
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-position-x: 2%;
+            padding-left: 30px !important;
         }

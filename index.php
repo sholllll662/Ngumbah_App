@@ -32,7 +32,7 @@
                     <div class="history">
                         <div class="header_history">
                             <h3 class="history_status" id="ongoing_status">Sedang di Proses</h3>
-                            <a href="#" class="link_to_status">Lihat Status Pemesanan</a>
+                            <a href="./detail.php" class="link_to_status">Lihat Status Pemesanan</a>
                         </div>
                         <table class="history_detail">
                             <tr>
