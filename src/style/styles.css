@@ -266,8 +266,34 @@ header {
 footer {
     box-shadow: 4px 0 10px 0 gainsboro;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 5fr;
+    padding: 20px 15px;
 }
-#footer_logo {
-    width: 30%;
-}
+    #footer_logo {
+        width: 100%;
+    }
+
+    .footer_description {
+        padding: 0 15px;
+    }
+
+        .footer_description h2 {
+            color:#01A6CA;
+            margin-bottom: 20px;
+        }
+
+        .footer_information {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+            .footer_information img {
+                margin-right: 10px;
+            }
+        .copyright {
+            margin: 10px auto;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }

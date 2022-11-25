@@ -107,10 +107,20 @@
             <img src="./src/public/images/Ngumbah_icon2.png" id="footer_logo" alt="Ngumbah App's Footer Logo">
             <div class="footer_description">
                 <h2>Kontak Kami</h2>
-                <div class="address_footer">
-                    
+                <div class="footer_information">
+                    <img src="./src/public/images/location.png" id="location_icon" alt="location's icon">
+                    <p>Jalan Lorem ipsum dolor, No. 0001, Indonesia</p>
+                </div>
+                <div class="footer_information">
+                    <img src="./src/public/images/phone.png" id="phone_icon" alt="phone's icon">
+                    <p>0811234567890</p>
+                </div>
+                <div class="footer_information">
+                    <img src="./src/public/images/instagram.png" id="instagram_icon" alt="instagram's icon">
+                    <p>Ngumbah_App</p>
                 </div>
             </div>
+            <p class="copyright">Ngumbah App Inc 2022</p>
         </footer>
     </body>
 </html>
