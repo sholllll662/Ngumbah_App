@@ -235,6 +235,46 @@ label {
         font-weight: bolder;
     }
 
+
+/*ORDER PAGE STYLES*/
+.order_container {
+    width:80%;
+    margin: 50px auto;
+    padding: 20px 20px;
+    box-shadow: 0 4px 10px 0px gainsboro;
+}
+    #order_title {
+        font-size: 28px;
+        color: #01A6CA;
+    }
+
+    .order_container form {
+        margin: 20px auto;
+        padding: 20px 25px;
+    }
+        .order_instruction {
+            font-size: 20px;
+            font-weight: normal;
+        }
+
+        .option {
+            box-shadow: 0px 4px 4px 0 gainsboro;
+            padding: 20px 30px;
+            margin:25px auto;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            background-color: white;
+            border: none;
+        }
+            .option h2 {
+                margin-bottom: 20px;
+            }
+            .option p {
+                margin-bottom: 15px;
+            }
+
+
 /*DETAIL PAGE STYLE*/
 .detail_container {
     box-shadow: 0px 4px 10px 0 gainsboro;
