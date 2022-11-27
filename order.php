@@ -19,58 +19,68 @@
         <main>
             <div class="order_container">
                 <h1 id="order_title">Pemesanan Layanan Laundry</h1>
-                <form>
+                <form class="order_form">
                     <h2 class="order_instruction">Pilih Jenis Layanan : </h2>
-                    <button  class="option" value="Complete_Express">
+                    <div class="option">
                         <h2>Complete + Express</h2>
                         <p>Paket Cuci Kiloan + Setrika + Pemesanan Prioritas</p>
                         <p>Harga: Rp15.000/kg (Harga tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button  class="option" value="Cuci_Express">
+                        <a href="data_order.php?package='01'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Complete + Express</h2>
                         <p>Paket Cuci Kiloan + Pemesanan Prioritas</p>
                         <p>Harga: Rp10.000/kg (Harga tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Setrika_Express">
+                        <a href="data_order.php?package='02'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Setrika + Express</h2>
                         <p>Paket Setrika Kiloan + Pemesanan Prioritas</p>
                         <p>Harga: Rp7.000/kg (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Complete">
+                        <a href="data_order.php?package='03'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Complete</h2>
                         <p>Paket Cuci Kiloan + Setrika</p>
                         <p>Harga: Rp10.000/kg (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Cuci">
+                        <a href="data_order.php?package='04'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Cuci</h2>
                         <p>Paket Cuci Kiloan</p>
                         <p>Harga: Rp7.000/kg (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Setrika">
+                        <a href="data_order.php?package='04'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Setrika</h2>
                         <p>Paket Setrika Kiloan</p>
                         <p>Harga: Rp5.000/kg (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Dry_Clean">
+                        <a href="data_order.php?package='05'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Dry Clean</h2>
                         <p>Paket Dry Clean Kiloan + Setrika</p>
                         <p>Harga: Rp8.000/kg (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Complete_Satuan">
+                        <a href="data_order.php?package='06'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Complete (Satuan)</h2>
                         <p>Paket Cuci + Setrika Satuan</p>
                         <p>Harga: Rp3.000/satuan (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Cuci_Satuan"">
+                        <a href="data_order.php?package='07'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Cuci (Satuan)</h2>
                         <p>Paket cuci satuan</p>
                         <p>Harga: Rp2.000/satuan (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
-                    <button class="option" value="Setrika_Satuan">
+                        <a href="data_order.php?package='08'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
+                    <div class="option">
                         <h2>Setrika (Satuan)</h2>
                         <p>Paket Setrika Satuan</p>
                         <p>Harga: Rp1.000/kg (Harga Tidak Termasuk Pengiriman)</p>
-                    </button>
+                        <a href="data_order.php?package='01'" class="pick_package_button">Pilih Layanan ini</a>
+                    </div>
                 </form>
             </div>
         </main>
