@@ -20,15 +20,63 @@
             <div class="order_container">
                 <h1 id="order_title">Pemesanan Layanan Laundry</h1>
                 <form class="order_form">
-                    <table>
+                    <table class="data_order">
                         <tr>
-                            <td>Nama Paket : </td>
-                            <td>Complete + Express</td>
+                            <td>
+                                <label>Nama Paket</label>
+                            </td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="input_column">Complete + Express</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="weight">Berat Laundry</label> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Berat Laundry (kg)" id="input_weight" name="weight" class="input_column">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="notes">Catatan</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <textarea placeholder="Catatan untuk toko mengenai laundry yang akan dilakukan" id="input_notes" class="input_column"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="user_name">Nama Pengguna</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Masukan Nama Pemesan" id="input_name" name="user_name" class="input_column">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Nomor Telepon/Hp</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Masukan Nomor Telepon/Hp Pemesan" id="input_phone" name="phone" class="input_column">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Alamat Lengkap</label></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Masukan Alamat Lengkap Pemesan" id="input_address" name="address" class="input_column">
+                            </td>
                         </tr>
                     </table>
+                    <a id="place_order_button">Buat Pesanan</a>
                 </form>
             </div>
         </main>
