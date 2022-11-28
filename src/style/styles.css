@@ -340,9 +340,11 @@ label {
             padding: 10px 15px;
             width: 100%;
         }
+
         .data_order textarea {
             height: 150px;
         }
+
 #place_order_button {
     background-color: #01A6CA;
     display: block;
@@ -353,8 +355,39 @@ label {
     color: white;
     text-decoration: none;
     font-weight: bolder;
-    
 }
+
+/*CONFIRMATION PAGE STYLES*/
+.confirmation_form{
+    width: 80%;
+}
+
+    .confirmation_form table {
+        width: 100%;
+    }
+
+        .confirmation_form table tr td {
+            padding: 10px 0 10px 5px;
+        }
+
+        .confirmation_form #user_notes {
+            height: 180px;
+            width: 100%;
+            padding: 20px 20px;
+            border: 1px solid #01A6CA;
+            resize: none;
+        }
+
+    .confirmation_form #confirmation_button {
+        background-color: #01A6CA;
+        display: block;
+        margin: 10px auto;
+        padding: 15px 20px;
+        border: none;
+        font-weight: bold;
+        color: white;
+    }
+
 
 /*DETAIL PAGE, HOMEPAGE, ORDER PAGE 1, ORDER PAGE 2, ORDER PAGE 3, DAN HISTORY PAGE STYLE*/
 header {
@@ -395,39 +428,177 @@ header {
             padding-left: 30px !important;
         }
 
-        footer {
-            box-shadow: 4px 0 10px 0 gainsboro;
-            display: grid;
-            grid-template-columns: 1fr 5fr;
-            padding: 20px 15px;
+        
+/*DASBORD PAGE STYLES*/
+.dasbord_container{
+    width: 100%;
+    display: grid;
+    grid-template-areas: "aside main" "nav main";
+    grid-template-columns: 0.3fr 1.7fr;
+    grid-template-rows: 1fr 3fr;
+  }
+  
+  .dasbord_container aside{
+    grid-area: aside;
+    background-color: #D7D4D4;
+    padding: 30px 0;
+  }
+  
+  .dasbord_container nav{
+    grid-area: nav;
+    background-color:#D7D4D4;
+  }
+  
+  .user_admin h1{
+    background-image: url(../public/images/user-account-box-64px.png);
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 4%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 70px;
+    color: black;
+  }
+  
+  .user_admin a{
+    text-decoration: none;
+  }
+  .user_admin{
+    padding-left: 10px !important;
+    height: 70px;
+  }
+  
+  #nav_admin{
+    padding-left: 10px !important;
+  }
+  
+  #nav_admin a{
+    text-decoration: none;
+    
+  }
+  
+  .dasbord_admin{
+    background-image: url(../public/images/home_32px.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    color: black;
+  }
+  
+  .transaksi_admin{
+    background-image: url(../public/images/money_32px.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    color: black;
+  }
+  
+  .customer_admin{
+    background-image: url(../public/images/user_32px.png);
+    background-size: 32px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 10%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    color: black;
+  }
+  
+  .button_terima{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+  }
+  
+  .button_terima button{
+    width: 150px;
+    height: 50px;
+    background-color:#01a6ca;
+    border-color: #01a6ca;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;  
+  }
+  
+  .button_tolak{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-left: 20px;
+  }
+  
+  .button_tolak button{
+    width: 150px;
+    height: 50px;
+    background-color:#01a6ca;
+    border-color: #01a6ca;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+  }
+  main{
+    grid-area: main;
+    background-color: aliceblue;
+    padding: 0 0;
+  }
+  
+  .order_container_admin{
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px 20px;
+    box-shadow: 0 4px 10px 0px gainsboro;
+  }
+
+
+
+/*ALL PAGES STYLE*/
+footer {
+    box-shadow: 4px 0 10px 0 gainsboro;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 20px 15px;
+}
+    #footer_logo {
+        width: 100%;
+    }
+
+    .footer_description {
+        padding: 0 15px;
+    }
+
+        .footer_description h2 {
+            color:#01A6CA;
+            margin-bottom: 20px;
         }
-            #footer_logo {
-                width: 100%;
+
+        .footer_information {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+            .footer_information img {
+                margin-right: 10px;
             }
-        
-            .footer_description {
-                padding: 0 15px;
-            }
-        
-                .footer_description h2 {
-                    color:#01A6CA;
-                    margin-bottom: 20px;
-                }
-        
-                .footer_information {
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 10px;
-                }
-        
-                    .footer_information img {
-                        margin-right: 10px;
-                    }
-                .copyright {
-                    margin: 10px auto;
-                    grid-column-start: 1;
-                    grid-column-end: 3;
-                    text-align: center;
-                }
-        
-        
+
+        .copyright {
+            margin: 10px auto;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            text-align: center;
+        }
