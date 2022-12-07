@@ -1,3 +1,54 @@
+<?php
+
+include 'conection.php';
+
+error_reporting(0);
+
+session_start();
+
+if (isset($_SESSION['username'])) {
+  header("Location: login.php");
+}
+
+if (isset($_POST['submit'])) {
+  //nama lengkap dan no telpon masih blm masuk ke database
+  $nama_lengkap = $_POST['nama_lengkap'];
+  $no_tlp = $_POST['no_tlp'];
+  $alamat = $_POST['alamat'];
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $password = md5($_POST['password1']);
+  $password2 = md5($_POST['password2']);
+
+  if ($password == $password2) {
+    $sql = "SELECT * FROM users_admin WHERE email='$email'";
+    $result = mysqli_query($conn, $sql);
+    if (!$result->num_rows > 0) {
+      $sql = "INSERT INTO users_admin (nama_lengkap, no_tlp, alamat, username, email, password)
+                    VALUES ('$nama_lengkap', '$no_tlp', '$alamat', '$username', '$email', '$password')";
+      $result = mysqli_query($conn, $sql);
+      if ($result) {
+        echo "<script>alert('Selamat, registrasi berhasil!')</script>";
+        $nama_lengkap = "";
+        $no_tlp = "";
+        $alamat = "";
+        $username = "";
+        $email = "";
+        $_POST['password1'] = "";
+        $_POST['password2'] = "";
+      } else {
+        echo "<script>alert('Woops! Terjadi kesalahan.')</script>";
+      }
+    } else {
+      echo "<script>alert('Woops! Email Sudah Terdaftar.')</script>";
+    }
+  } else {
+    echo "<script>alert('Password Tidak Sesuai')</script>";
+  }
+}
+
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -19,7 +70,7 @@
         </tr>
         <tr>
           <td>
-            <input type="text" id="input_fullname_registration" class="input_fullname" name="fullname" placeholder="Masukan Nama Lengkap" />
+            <input type="text" id="input_fullname_registration" class="input_fullname" name="nama_lengkap" placeholder="Masukan Nama Lengkap" value="<?php echo $nama_lengkap; ?>" required>
           </td>
         </tr>
         <tr>
@@ -29,7 +80,7 @@
         </tr>
         <tr>
           <td>
-            <input type="text" id="input_phone_registration" class="input_phone" name="phone" placeholder="Masukan Nomor Telepon" />
+            <input type="text" id="input_phone_registration" class="input_phone" name="no_tlp" placeholder="Masukan Nomor Telepon" value="<?php echo $no_tlp; ?>" required>
           </td>
         </tr>
         <tr>
@@ -39,7 +90,7 @@
         </tr>
         <tr>
           <td>
-            <input type="email" id="input_email_registration" class="input_email" name="email" placeholder="Masukan Email" />
+            <input type="email" id="input_email_registration" class="input_email" name="email" placeholder="Masukan Email" value="<?php echo $email; ?>" required>
           </td>
         </tr>
         <tr>
@@ -49,7 +100,7 @@
         </tr>
         <tr>
           <td>
-            <textarea type="text" id="input_address_registration" class="input_address" name="address" placeholder="Masukan Alamat " rows="3"></textarea>
+            <textarea type="text" id="input_address_registration" class="input_address" name="alamat" placeholder="Masukan Alamat " rows="3" value="<?php echo $alamat; ?>" required></textarea>
           </td>
         </tr>
         <tr>
@@ -59,7 +110,7 @@
         </tr>
         <tr>
           <td>
-            <input type="text" id="input_username_registration" class="input_username" name="username" placeholder="Masukan Nama Pengguna" />
+            <input type="text" id="input_username_registration" class="input_username" name="username" placeholder="Masukan Nama Pengguna" value="<?php echo $username; ?>" required>
           </td>
         </tr>
         <tr>
@@ -69,7 +120,7 @@
         </tr>
         <tr>
           <td>
-            <input type="password" id="input_password1_registration" class="input_password" name="password1" placeholder="Masukan Kata Sandi" />
+            <input type="password" id="input_password1_registration" class="input_password" name="password1" placeholder="Masukan Kata Sandi" value="<?php echo $_POST['password1']; ?>" required>
           </td>
         </tr>
         <tr>
@@ -79,12 +130,16 @@
         </tr>
         <tr>
           <td>
-            <input type="password" id="input_password2_registration" class="input_password" name="password2" placeholder="Masukan Konfirmasi Kata Sandi" />
+            <input type="password" id="input_password2_registration" class="input_password" name="password2" placeholder="Masukan Konfirmasi Kata Sandi" value="<?php echo $_POST['password2']; ?>" required>
           </td>
         </tr>
       </table>
-      <button type="submit" id="registration_button">Daftar Akun</button>
+      <button type="submit" id="registration_button" name="submit">Daftar Akun</button>
     </form>
+    <div class="alternative_login">
+      <p class="alternative_login_item">Sudah mempunyai akun?</p>
+      <a href="./login_admin.php" class="alternative_login_item" id="login_link">Masuk Sekarang</a>
+    </div>
   </div>
 </body>
 

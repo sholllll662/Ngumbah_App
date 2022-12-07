@@ -13,7 +13,7 @@
         <img src="./src/public/images/Ngumbah_icon1.png" id="header_logo" alt="Ngumbah App's Header Logo">
         <button id="more_navigation_list" aria-label="more_navigation_list">&#9776</button>
         <nav id="navigation_list">
-            <a href="#">Keluar</a>
+            <a href="logout.php">Keluar</a>
         </nav>
     </header>
     <div class="dasbord_container">
